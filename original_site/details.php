@@ -18,6 +18,7 @@ if (isset($_GET['id'])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/ee4a922350.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js" integrity="sha512-YcsIPGdhPK4P/uRW6/sruonlYj+Q7UHWeKfTAkBW+g83NKM+jMJFJ4iAPfSnVp7BKD4dKMHmVSvICUbE/V1sSw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Details</title>
     <link rel="stylesheet" href="./details.css">
 </head>
@@ -39,7 +40,7 @@ if (isset($_GET['id'])){
         </nav>
         <img src="../images/menu.png" alt="" class="menu-icon" onclick="togglemenu()">
     </div>
-    <div class="item-details">
+    <div class="item-details" id="print">
         <?php
            echo"<div class='item-detail-container'>";
             echo"<div class='detail-row'>";
@@ -61,7 +62,7 @@ if (isset($_GET['id'])){
                     echo"<p>Address: ".$line['address']." </p>";
                    echo" <p>Contact no: ".$line['contact']."</p>";
                     echo"<p>Notes* : ".$line['special']."</p>";
-                    echo"<button class='detail-button'>Add to cart</button>";
+                    echo"<button class='detail-button' id='download'>Download Details</button>";
                }
             }
                 echo"</div>";
@@ -150,6 +151,27 @@ if (isset($_GET['id'])){
             behavior: "smooth"
         })
     })
+
+    window.onload = function(){
+
+document.getElementById("download")
+.addEventListener("click",()=> {
+
+  const print = this.document.getElementById("print");
+  console.log(print);
+  console.log(window);
+  html2pdf().from(print).save();
+  
+
+
+})
+
+
+};
+
+
+
     </script>
 </body>
+
 </html>
