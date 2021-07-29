@@ -1,0 +1,12 @@
+.comment{
+
+    display: inline-block;
+    color: rgb(104, 221, 8);
+    background-color: rgb(72, 75, 73);
+    margin-left:350px ;
+    margin-top: 200px;
+}
+body{
+
+    background-image: url(images/latestback.jpg);
+}
