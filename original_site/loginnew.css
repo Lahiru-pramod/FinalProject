@@ -29,7 +29,7 @@
 .login-full{
     background: #F2F6FC;
     overflow: hidden;
-    max-width: 1280px;
+    width: 100%;
 }
 .navbar{
     width: 100%;
@@ -217,7 +217,6 @@ footer{
 }
 
 .footer-container{
-    max-width: 1280px;
     width: 100%;
     margin: auto;
     display: flex;

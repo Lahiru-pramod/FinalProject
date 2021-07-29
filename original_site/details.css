@@ -8,7 +8,6 @@
 .details-full{
     background: #F2F6FC;
     overflow: hidden;
-    max-width: 1280px;
     width: 100%;
 }
 
@@ -106,7 +105,7 @@
 }
 
 .item-detail-container{
-    max-width: 1080px;
+    width: 100%;
     margin: auto;
     padding-top: 25px;
     padding-left: 10px;
@@ -181,7 +180,7 @@ footer{
 }
 
 .footer-container{
-    max-width: 1280px;
+    width: 100%;
     margin: auto;
     display: flex;
     padding: 25px;
