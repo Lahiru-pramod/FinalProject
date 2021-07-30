@@ -222,10 +222,10 @@
 
 }
 .button-order{
-
     display: flex;
-
+    justify-content: space-between;
 }
+
 .product-card .button-order a button{
 
     padding-left: 16px;

@@ -58,7 +58,7 @@
                             echo"<p>".$row['description']."</p>";
                             echo"<div class='button-order'>";
                             echo"<a href='./details.php?id=".$row['id']."'><button >View more</button></a>";
-                            echo"<button type='submit' name='add_to_cart'><a href='./cart.php?id=".$row['id']."'>Add to Cart</a></button>";
+                            echo"<button type='submit' name='add_to_cart'>Add cart</button>";
                             echo"</div>";
 
            echo "</div>";

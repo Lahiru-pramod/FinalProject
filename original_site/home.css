@@ -269,7 +269,7 @@ button:hover{
     margin: 100px 0;
     padding: 30px;
     /*background: #D8E7FC;*/
-    background-image: url('../images/topbg.png');
+    background-image: url('./images/topbg.png');
 }
 
 .most-choose-container{
